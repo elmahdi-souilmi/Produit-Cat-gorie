@@ -1,0 +1,19 @@
+{
+  "name": "produit-cat-gorie",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elmahdi-souilmi/Produit-Cat-gorie.git"
+  },
+  "author": "souilmi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/elmahdi-souilmi/Produit-Cat-gorie/issues"
+  },
+  "homepage": "https://github.com/elmahdi-souilmi/Produit-Cat-gorie#readme"
+}
