@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page  Categori</title>
+    <link rel="stylesheet" href="/css/tableCategory.css">
+</head>
+<body>
+    <div id="demo">
+        
+      <a href="/category/addCategory" target="_blank" id="add">Add Category</a>
+        <!-- Responsive table starts here -->
+        <!-- For correct display on small screens you must add 'data-title' to each 'td' in your table -->
+        <div class="table-responsive-vertical shadow-z-1">
+        <!-- Table starts here -->
+        <table id="table" class="table table-hover table-mc-light-blue">
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Name Category</th>
+                <th>Edit Category</th>
+                <th>Delete Category</th>
+              </tr>
+            </thead>
+            <tbody>
+              <% for(categorie of categories) { %>
+              <tr>
+                <td data-title="ID">1</td>
+                <td data-title="Name Category"><%= categorie.nameCat %></td>
+                <td data-title="Edit Category">
+                    <a href="/category/editCategory/<%= categorie.idCAt %>" target="_blank">Update</a>
+                </td>
+                <td data-title="Delete Category">
+                    <a href="/category/deletecategory/<%= categorie.idCAt %>" target="_blank">Delete</a>
+                </td>
+              </tr>
+             <% } %>
+            </tbody>
+          </table>
+        </div>
+        
+        
+      </div>
+
+      <div class="back" style="display: flex;justify-content: center;">
+        <a href="/" >Back to Home</a>
+      </div>
+</body>
+</html>

@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+
+/* +++++++++++++ CSS STYLE THE CATEGORY CARD +++++++++++++ */
+/* ================== Start code =================== */
+.card-category {
+    background: rgb(210 210 210);
+    display: flex;
+    align-items: center;
+    font-size: 19px;
+    border-radius: 4px;
+    position: relative;
+    height: 100%;
+    padding: 15px 0;
+    box-shadow: 0 0 2rem -1rem rgba(0, 0, 0, .05);
+    
+}
+
+.card-category .checked{
+ color: green;
+}
+
+ .card-category .multi-button {
+    z-index: 0;
+    position: absolute;
+    top: 1.25rem;
+    right: -1rem;
+    border-radius: 100%;
+    width: 0rem;
+    height: 0rem;
+    transform: translate(0%, -10%);
+    transition: 0.25s cubic-bezier(0.25, 0, 0, 1);
+}
+ .card-category .multi-button .fa-edit,
+ .card-category .multi-button .fa-trash-alt{
+    display: grid;
+    place-items: center;
+    position: absolute;
+    width: 2rem;
+    height: 2rem;
+    border: none;
+    border-radius: 100%;
+    background: blue;
+    color: white;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    transition: 0.25s cubic-bezier(0.25, 0, 0, 1);
+    text-decoration: none;
+}
+
+
+ .card-category .multi-button a:first-child:nth-last-child(2):nth-child(1),  .card-category .multi-button a:first-child:nth-last-child(2) ~ *:nth-child(1) {
+    right: 0;
+    top: 0;
+}
+ .card-category .multi-button a:first-child:nth-last-child(2):nth-child(2),  .card-category .multi-button a:first-child:nth-last-child(2) ~ *:nth-child(2) {
+    right: 30%;
+    top: 0%;
+}
+
+ .card-category p {
+    font-family: "Poppins medium", sans-serif;
+}
+
+.card-category:hover .multi-button, body .card-category .multi-button:focus-within {
+    width: 8rem;
+    height: 8rem;
+}
+
+/* ================== End code =================== */
+
+
+/* +++++++++++++ CSS STYLE THE PRODUCT CARD +++++++++++++ */
+/* ================== Start code =================== */
+.cableItem-hide{
+    opacity: 0;
+    width: 0;
+    padding: 0 !important;
+    margin: 0 !important;
+    position: absolute !important;
+    top: 0;
+}
+
+.card-product,
+a .card-product {
+    background: white;
+    display: flex;
+    align-items: center;
+    font-size: 19px;
+    border-radius: 4px;
+    position: relative;
+    height: 100%;
+    padding: 5px 0;
+    margin: 10px 0;
+    border: 2px solid #d4d4d4;
+    box-shadow: 0 0 2rem -1rem rgba(0, 0, 0, .05);
+    text-decoration: none;
+}
+
+
+ .card-product .multi-button {
+    z-index: 0;
+    position: absolute;
+    top: 1.25rem;
+    right: -1rem;
+    border-radius: 100%;
+    width: 0rem;
+    height: 0rem;
+    transform: translate(0%, -10%);
+    transition: 0.25s cubic-bezier(0.25, 0, 0, 1);
+}
+ .card-product .multi-button a{
+    display: grid;
+    place-items: center;
+    position: absolute;
+    width: 2rem;
+    height: 2rem;
+    border: none;
+    border-radius: 100%;
+    background: blue;
+    color: white;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    transition: 0.25s cubic-bezier(0.25, 0, 0, 1);
+    text-decoration: none;
+}
+
+
+.card-text,
+.card-title{
+    text-decoration: none;
+    color: black;
+}
+
+
+ .card-product .multi-button a:first-child:nth-last-child(2):nth-child(1),  .card-product .multi-button a:first-child:nth-last-child(2) ~ *:nth-child(1) {
+    right: 0;
+    top: 0;
+}
+ .card-product .multi-button a:first-child:nth-last-child(2):nth-child(2),   .card-product .multi-button a:first-child:nth-last-child(2) ~ *:nth-child(2) {
+    right: 30%;
+    top: 0;
+}
+
+
+.card-product:hover .multi-button,  body .card-product .multi-button:focus-within {
+    width: 8rem;
+    height: 8rem;
+}
+/* ================== End code =================== */
