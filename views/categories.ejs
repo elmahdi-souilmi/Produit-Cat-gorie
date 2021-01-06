@@ -9,7 +9,7 @@
 <body>
     <div id="demo">
         
-      <a href="/category/addCategory" target="_blank" id="add">Add Category</a>
+      <a href="/category/addCategory" id="add">Add Category</a>
         <!-- Responsive table starts here -->
         <!-- For correct display on small screens you must add 'data-title' to each 'td' in your table -->
         <div class="table-responsive-vertical shadow-z-1">
@@ -29,10 +29,10 @@
                 <td data-title="ID">1</td>
                 <td data-title="Name Category"><%= categorie.nameCat %></td>
                 <td data-title="Edit Category">
-                    <a href="/category/editCategory/<%= categorie.idCAt %>" target="_blank">Update</a>
+                    <a href="/category/editCategory/<%= categorie.idCAt %>" >Update</a>
                 </td>
                 <td data-title="Delete Category">
-                    <a href="/category/deletecategory/<%= categorie.idCAt %>" target="_blank">Delete</a>
+                    <a href="/category/deletecategory/<%= categorie.idCAt %>">Delete</a>
                 </td>
               </tr>
              <% } %>
