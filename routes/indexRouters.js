@@ -28,6 +28,7 @@ router.get('/', (req, res) => {
         if (err) throw err;
         res.render("home", {
             produits: result
+           
         })
         res.end()
     });
@@ -69,7 +70,6 @@ router.post('/saveProduit', (req, res) => {
 
 // delete product by id
 router.get('/deleteProduit/:id', (req, res) => {
-    console.log(req.params.id)
     let sql = `DELETE FROM produit WHERE idProd = "${req.params.id}"`;
     db.query(sql, (err, result) => {
         if (err) throw err;

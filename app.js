@@ -16,7 +16,8 @@ app.use(bodyParser.urlencoded({
 //to read file from the pubic foldern
 app.use(express.static("public"));
 //to not use .ejs everytime
-app.set("view engine", "ejs");
+app.set('view engine', 'ejs');
+app.set('views', 'views');
 
 
 app.use("/", indexRouter)
